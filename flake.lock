@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "hacker-news-to-sqlite-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./pkgs/hacker-news-to-sqlite",
+        "type": "path"
+      },
+      "original": {
+        "path": "./pkgs/hacker-news-to-sqlite",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1755615617,
+        "narHash": "sha256-HMwfAJBdrr8wXAkbGhtcby1zGFvs+StOp19xNsbqdOg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "20075955deac2583bb12f07151c2df830ef346b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "paginate-json-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./pkgs/paginate-json",
+        "type": "path"
+      },
+      "original": {
+        "path": "./pkgs/paginate-json",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "root": {
+      "inputs": {
+        "hacker-news-to-sqlite-flake": "hacker-news-to-sqlite-flake",
+        "nixpkgs": "nixpkgs",
+        "paginate-json-flake": "paginate-json-flake"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
