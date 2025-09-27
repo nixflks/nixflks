@@ -38,6 +38,10 @@ nixflks_test__exit_code() {
 # ─────────────────────────────────────────────────────────────
 # Test Functions
 
+test__bashbrew() {
+    nixflks_test__exit_code "pkgs/bashbrew" nix run .#bashbrew -- --version
+}
+
 test__hacker-news-to-sqlite() {
     nixflks_test__exit_code "pkgs/hacker-news-to-sqlite" nix run .#hacker-news-to-sqlite -- --version
 }
@@ -50,6 +54,7 @@ test__paginate-json() {
 # Main Function
 
 main() {
+    test__bashbrew
     test__hacker-news-to-sqlite
     test__paginate-json
 }

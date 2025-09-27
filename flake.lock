@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "bashbrew-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./pkgs/bashbrew",
+        "type": "path"
+      },
+      "original": {
+        "path": "./pkgs/bashbrew",
+        "type": "path"
+      },
+      "parent": []
+    },
     "hacker-news-to-sqlite-flake": {
       "inputs": {
         "nixpkgs": [
@@ -50,6 +66,7 @@
     },
     "root": {
       "inputs": {
+        "bashbrew-flake": "bashbrew-flake",
         "hacker-news-to-sqlite-flake": "hacker-news-to-sqlite-flake",
         "nixpkgs": "nixpkgs",
         "paginate-json-flake": "paginate-json-flake"

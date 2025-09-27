@@ -6,6 +6,11 @@
       url = "github:NixOS/nixpkgs/nixos-unstable";
     };
 
+    bashbrew-flake = {
+      url = "./pkgs/bashbrew";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     hacker-news-to-sqlite-flake = {
       url = "./pkgs/hacker-news-to-sqlite";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,6 +25,7 @@
   outputs =
     {
       nixpkgs,
+      bashbrew-flake,
       hacker-news-to-sqlite-flake,
       paginate-json-flake,
       ...
@@ -76,6 +82,7 @@
         };
 
         # Packages [Flakes]
+        bashbrew = bashbrew-flake.packages.${system}.bashbrew;
         hacker-news-to-sqlite = hacker-news-to-sqlite-flake.packages.${system}.hacker-news-to-sqlite;
         paginate-json = paginate-json-flake.packages.${system}.paginate-json;
       });

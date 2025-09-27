@@ -21,6 +21,13 @@ The following packages are available for use.
   <tbody>
     <tr>
       <td>
+        <strong><code>bashbrew</code></strong>
+      </td>
+      <td>Canonical parsing tool for the official Docker images library files.</td>
+      <td><code>pkgs/bashbrew</code></td>
+    </tr>
+    <tr>
+      <td>
         <strong><code>hacker-news-to-sqlite</code></strong>
       </td>
       <td>Create a SQLite database containing data pulled from Hacker News.</td>
@@ -48,6 +55,12 @@ The following packages are available for use.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>
+        <strong><code>bashbrew</code></strong>
+      </td>
+      <td><code>nix run github:nixflks/nixflks#bashbrew -- --version</code></td>
+    </tr>
     <tr>
       <td>
         <strong><code>hacker-news-to-sqlite</code></strong>
