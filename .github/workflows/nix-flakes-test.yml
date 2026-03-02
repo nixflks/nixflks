@@ -29,4 +29,6 @@ jobs:
       - name: "Nix Flakes: Test"
         shell: "bash"
         run: |
-          ./.nix/ci/workflows/nix-flakes-test.sh
+          nix develop --command \
+            task test \
+              --parallel

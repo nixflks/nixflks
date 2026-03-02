@@ -10,10 +10,11 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"github.vscode-github-actions",
-				"redhat.vscode-yaml",
-				"jnoortheen.nix-ide"
-			],
+                "github.vscode-github-actions",
+                "redhat.vscode-yaml",
+                "jnoortheen.nix-ide",
+                "task.vscode-task"
+            ],
 			"settings": {
 				"editor.rulers": [120],
 				"editor.quickSuggestions": {

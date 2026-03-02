@@ -36,6 +36,8 @@
         );
 
       installNixPackages = pkgs: [
+        pkgs.go-task
+
         pkgs.nix
         pkgs.nixd # Nix Language Server
       ];

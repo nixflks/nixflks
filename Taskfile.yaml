@@ -1,0 +1,25 @@
+version: "3"
+
+tasks:
+  test:
+    desc: "Run tests"
+    cmds:
+      - task: "test:bashbrew"
+      - task: "test:hacker-news-to-sqlite"
+      - task: "test:paginate-json"
+
+  test:bashbrew:
+    desc: "Run tests for 'bashbrew'"
+    
+    cmds:
+      - nix run .#bashbrew -- --version
+
+  test:hacker-news-to-sqlite:
+    desc: "Run tests for 'hacker-news-to-sqlite'"
+    cmds:
+      - nix run .#hacker-news-to-sqlite -- --version
+
+  test:paginate-json:
+    desc: "Run tests for 'paginate-json'"
+    cmds:
+      - nix run .#paginate-json -- --version
